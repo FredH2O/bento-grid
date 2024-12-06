@@ -1,8 +1,8 @@
 const FirstBox = () => {
   return (
-    <div className="grid grid-flow-col place-items-center grid-cols-3 grid-rows-2 p-3 gap-4 border-2 border-red-600">
+    <div className="place-items-start grid grid-flow-col grid-cols-3 grid-rows-2 p-2 gap-2 border-2 border-red-600">
       {/* div 1 */}
-      <div className="col-span-1 grid-rows-1 bg-violet-600 text-center rounded-lg place-items-center p-5">
+      <div className="border-red-500 border-2 col-span-2 grid-rows-1 bg-violet-600 text-center rounded-lg place-items-center p-5">
         <h1 className="text-6xl mb-5 mt-10 text-white text-center">
           Social Media <span className="text-orange-200">10x</span>{" "}
           <i>Faster</i> with AI
@@ -19,21 +19,26 @@ const FirstBox = () => {
 
       {/*div 2*/}
 
-      <div className="grid grid-cols-2 grid-rows-1 col-span-2 border-2 border-blue-700">
-        <div className="col-span-1 border-2 border-red-500 rounded-lg p-2 m-3">
+      <div className="grid grid-cols-2 col-span-2">
+        <div className="w-96 bg-stone-100 col-span-1 border-2 rounded-lg p-3 m-3">
           <img
             src="/illustration-multiple-platforms.webp"
             alt="Multiple Platforms"
-            className="object-none w-auto"
+            className="w-full overflow-hidden object-none"
           />
           <h2 className="text-4xl">Manage multiple accounts and platforms.</h2>
         </div>
-        {/*div 3*/}
-        <div className="col-span-1">
+
+        <div className="col-span-1 w-96 m-3 p-3 bg-orange-200">
           <h2 className="text-4xl">Maintain a consistent posting schedule.</h2>
-          <img src="/illustration-consistent-schedule.webp" />
+          <img
+            src="/illustration-consistent-schedule.webp"
+            className="w-52 place-items-center"
+          />
         </div>
       </div>
+
+      {/*div 3*/}
 
       <div className="col-span-1 border-2 row-span-2 grid-rows-subgrid border-blue-600">
         Schedule to social media.
